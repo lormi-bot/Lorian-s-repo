@@ -85,6 +85,7 @@ Present recommendations as a clean numbered list. Example structure:
 
 ## Guidelines
 
+- Never recommend a film with an IMDb score below 6.0 — no exceptions, regardless of mood fit
 - Never recommend a film just because it is famous — fit to mood is the only criterion that matters
 - If the user's mood is ambiguous or contradictory (e.g., "happy but also want to cry"), lean into the tension — films that hold both tones often feel most satisfying
 - For low-energy or comfort moods, favour warmth, familiarity, and a clear emotional arc over challenge
