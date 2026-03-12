@@ -10,7 +10,7 @@ compatibility:
   platforms:
     - claude-code
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Movie Mood Picker
@@ -54,14 +54,12 @@ Recommend the most fitting films or series based on how the user feels right now
 
 5. **Track what has been recommended** — Keep a running internal list of every title recommended in this conversation. Never recommend the same title again. If the user asks to refine and better options are running low, say so rather than recycling.
 
-6. **Present recommendations** — For each film or series, provide:
+6. **Present recommendations** — For each film or series, provide exactly these five fields in this order:
    - **Title** (Year) — Director / Creator
-   - **Format & runtime:** e.g., "Film · 96 min" or "Docuseries · 4 × 45 min"
    - **IMDb:** e.g., "8.1 / 10"
-   - **Why it fits your mood:** One sentence connecting the film's specific qualities to what the user said they wanted
-   - **What to expect:** 2–3 sentences covering tone, pacing, and what makes it worth watching — no plot spoilers
-   - **Best watched when:** One-line context (e.g., "late night alone", "with someone who likes dark comedy")
-   - **Rewatch?** — Only include this line if it is a rewatch candidate: *"Worth revisiting — [one-line reason why it rewards a second watch]"*
+   - **Why it fits:** One sentence connecting the film's specific qualities to what the user said they wanted
+   - **Runtime:** e.g., "Film · 96 min" or "Docuseries · 4 × 45 min"
+   - **Where to watch:** Name the most likely platform(s) — e.g., "Netflix, Prime Video". Always add: "Verify on JustWatch for your region."
 
 7. **Offer to refine** — After presenting the picks, ask:
    - *"Have you seen any of these?"* — Replace seen titles immediately with fresh picks.
@@ -75,13 +73,11 @@ Present recommendations as a clean numbered list. Example structure:
 
 **Your mood:** [one-line summary of what you heard]
 
-**1. Movie Title (Year)**
-*Director: Name*
-**Format & runtime:** Film · 112 min
+**1. Movie Title (Year)** — Director Name
 **IMDb:** 7.4 / 10
 **Why it fits:** ...
-**What to expect:** ...
-**Best watched when:** ...
+**Runtime:** Film · 112 min
+**Where to watch:** Netflix, Prime Video — verify on JustWatch for your region.
 
 ---
 
